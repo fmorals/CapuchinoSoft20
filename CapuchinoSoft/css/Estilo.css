@@ -1,0 +1,301 @@
+﻿body {
+}
+
+
+
+.container 
+        {            
+            background: url('/Imagenes/SIIGeo2.png') 0 80% no-repeat  ;
+            background-size: cover  ;            
+            width:80%;
+            height:150px;            
+            left: 0px; 
+            top: 0px; 
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+
+ table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .titulo1
+{
+	font-size:13pt;
+	font-weight:bold;	
+    border-spacing:2px;
+    color:#943126;    
+}
+
+    .auto-style1 {
+        width: 10%;
+        height: 23px;
+    }
+    .auto-style2 {
+        width: 40%;
+        height: 23px;
+    }
+
+
+
+    /*GRID*/
+    /*Estilo general para el gridView*/
+    .gridView {
+    margin:0 auto;
+    font-size:11px;
+    text-align:center;
+    border:hidden;
+    }
+    /*Selecciona las filas pares y las colorea*/
+    .gridView tr:nth-child(even)
+    {
+    background-color: #a9c673;
+    }
+    /*Selecciona las filas impares y las colorea*/
+    .gridView tr:nth-child(odd)
+    {
+    background-color: #fff;
+    }
+    /*Estilo para las casillas del gridView*/
+    .gridView td {
+    padding-left:3px;
+    padding-right:3px;
+    border:hidden;
+    }
+
+    .gridViewHeader{
+    height:35px;
+    }
+ 
+    .gridViewHeader th {
+    background-color:#435B14;
+    padding:5px;
+    border:hidden;
+    color:#fff;
+    }
+ 
+    /*Redondeamos el borde superior izquierdo de la primera casilla del header*/
+ 
+    .gridViewHeader th:first-child {
+    border-radius:5px 0 0 0;
+    }
+ 
+    /*Y el borde superior derecho de la ultima casilla*/
+ 
+    .gridViewHeader th:last-child {
+    border-radius:0 5px 0 0;
+    }
+ 
+    /*Estilo para los enlaces del header...*/
+ 
+    .gridViewHeader th a {
+    padding:5px;
+    text-decoration:none;
+    color:#435B14;
+    background-color:#a9c673;
+    border-radius:5px;
+ 
+    }
+ 
+    .gridViewHeader th a:hover {
+    color:#435B14;
+    background-color:#B1C689;
+    box-shadow:0 0 .9em rgba(0, 0, 0, .8);
+    }
+ 
+    /*Estilo para los enlaces del header...*/
+ 
+    .gridViewHeader th a {
+    padding:5px;
+    text-decoration:none;
+    color:#435B14;
+    background-color:#a9c673;
+    border-radius:5px;
+ 
+    }
+ 
+    .gridViewHeader th a:hover {
+    color:#435B14;
+    background-color:#B1C689;
+    box-shadow:0 0 .9em rgba(0, 0, 0, .8);
+    }
+
+
+
+    /********************** BOTON **********************/
+    .boton{
+        border-style: none;
+        border-color: inherit;
+        border-width: 0px;
+        border-radius: 2px;
+        font-size:10px;
+        font-family:Verdana,Helvetica;
+        /*font-weight:bold ;*/
+        color:white;
+        background:#00c8ff;
+        height: 25px;
+        }
+
+
+    /***********************   RADIO BUTTON ***********************/
+   input[type=radio].css-checkbox{
+	display: none;
+    }
+    input[type=radio].css-checkbox + label.css-label{
+	    padding-left: 27px;
+	    height: 18px;
+	    display: inline-block;
+	    line-height: 18px;
+	    background-repeat: no-repeat;
+	    background-position: 0 0;
+	    vertical-align: middle;
+	    cursor: pointer;
+    }
+    input[type=radio].css-checkbox:checked + label.css-label{
+	    background-position: 0 -18px;
+    }
+    label.css-label{
+	    background-image: url(/Imagenes/cssradiobutton.png);
+	    -webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select:none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+    }
+    label.css-label{
+		background-image: url(/Imagenes/cssradiobutton.png);
+		background-size: 18px 36px;
+	}
+
+
+/***********************************  MODAL ********************/
+#popup {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+#popup:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   transition:all 1s;
+}
+.popup-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:50%;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #333;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
+} 
+
+
+/**************************** BOTON PAR ABIR VENTANA MODAL **************/
+/*#mostrar-popup {
+  display: none;
+}
+#mostrar-popup + label {
+  background: steelblue;
+  display: table;
+  margin: auto;
+  color: #fff;
+  line-height: 3;
+  padding: 0 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#mostrar-popup + label:hover {
+  background: #38678f;
+}
+#mostrar-popup:checked ~ #popup {
+  top: 0;
+}*/
+
+</style>
+
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px
+
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    /*transition: 0.4s;*/
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    /*transition: max-height 0.2s ease-out;*/
+}
+    .auto-style3 {
+        width: 40%;
+    }
